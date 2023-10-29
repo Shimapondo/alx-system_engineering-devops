@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-
+# Displays "Best school" 10 times
+	
 	count=0
-
-# Displays "Best School" 10 times
 	while [ $count -lt 10 ]; do
 		echo " Best School"
-			let count=count+1
+		count=$((count + 1))
 	done
