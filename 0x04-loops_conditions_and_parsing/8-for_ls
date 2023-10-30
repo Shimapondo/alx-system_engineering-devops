@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Displays content for current directory
+for file in [!.-]*; do
+	name="${file#*-}"
+	echo "$name"
+done
