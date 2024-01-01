@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# SSH client configuration to server without typing a password
+Host myserver
+	HostName 192.168.1.100
+	User myusername
+	IdentityFile ~/.ssh/school
+	PasswordAuthentication no
