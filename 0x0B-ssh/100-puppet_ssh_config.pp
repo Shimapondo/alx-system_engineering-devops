@@ -3,7 +3,7 @@
 augeas { 'ssh_client_configuration':
   context => '/etc/ssh/ssh_config',
   changes => [
-    "set identityFile /root/.ssh/school",
+    "set identityFile ~/.ssh/school",
     "set PasswordAuthentication no",
   ],
 }
