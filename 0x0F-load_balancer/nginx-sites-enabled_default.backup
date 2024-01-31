@@ -20,12 +20,12 @@
 #
 server {
 	listen 80 default_server;
-	 listen [::]:80 default_server;
+	listen [::]:80 default_server;
 
 	# SSL configuration
 	#
-	# listen 80 ssl default_server;
-	#  listen [::]:80 ssl default_server;
+	# listen 443 ssl default_server;
+	# listen [::]:443 ssl default_server;
 	#
 	# Note: You should disable gzip for SSL traffic.
 	# See: https://bugs.debian.org/773332
@@ -45,8 +45,7 @@ server {
 
 	server_name _;
 
-	location = / {
-		return 200 "Hello World!\n";
+	location / {
 		# First attempt to serve request as file, then
 		# as directory, then fall back to displaying a 404.
 		try_files $uri $uri/ =404;
@@ -79,7 +78,7 @@ server {
 #
 #server {
 #	listen 80;
-#	 listen [::]:80;
+#	listen [::]:80;
 #
 #	server_name example.com;
 #

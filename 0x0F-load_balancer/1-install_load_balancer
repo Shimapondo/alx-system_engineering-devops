@@ -40,8 +40,8 @@ frontend shimapondo-tech-frontend
 
 backend shimapondo-tech-backend
     balance roundrobin
-    server 455014-web-01 54.209.101.128:80 check
-    server 455014-web-02 54.196.43.109:80 check
+    server 455014-web-01 100.26.254.163:80 check
+    server 455014-web-02 100.24.72.49:80 check
 "
 
 # shellcheck disable=SC2154
